@@ -1,68 +1,22 @@
 {
-  "name": "recruit-ts",
+  "name": "rg-actions",
   "version": "1.0.0",
-  "description": "Talent Acquisition Platform. Powerful software that makes hiring easy.",
+  "description": "",
   "main": "index.js",
-  "author": {
-    "name": "SYMITS"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Symits-SQA/Recruit-TS",
-    "directory": ""
+    "url": "git+https://github.com/tofiqsymits/RG-Actions.git"
   },
-  "keywords": [
-    "playwright",
-    "Recruit",
-    "Automation"
-  ],
-  "scripts": {
-    "tests:chrome": "playwright test --config=playwright.config.ts --project=chromium --workers=4",
-    "tests:firefox": "playwright test --config=playwright.config.ts --project=firefox --workers=4",
-    "e2e:aws:chrome": "playwright test --config=Production.config.ts --project=chromium --reporter=list --workers=2",
-    "e2e:aws:firefox": "playwright test --config=Production.config.ts --project=firefox --reporter=list --workers=2",
-    "e2e:githubaction:chrome": "playwright test --config=Production.config.ts --project=chromium --reporter=list,html --workers=4",
-    "e2e:aws1:firefox": "playwright test --config=Production.config.ts --project=firefox --reporter=list --workers=1",
-    "e2e:all": "playwright test --config=Production.config.ts",
-    "e2e:chrome": "playwright test --config=Production.config.ts --project=chromium --reporter=list,html",
-    "e2e:firefox": "playwright test --config=Production.config.ts --project=firefox --reporter=list,html",
-    "e2e:webkit": "playwright test --config=Production.config.ts --project=webkit --reporter=list,html",
-    "e2e:debug": "playwright test --config=Production.config.ts --project=chromium --reporter=list,html --debug",
-    "e2e:show-report": "allure generate ./test-results/Reports/e2e/Production/allure-results -o ./test-results/Reports/e2e/Production/allure-reports --clean && npx allure open ./test-results/Reports/e2e/Production/allure-reports",
-    "e2s:all": "playwright test --config=Staging.config.ts",
-    "e2s:chrome": "playwright test --config=Staging.config.ts --project=chromium --reporter=list,html",
-    "e2s:firefox": "playwright test --config=Staging.config.ts --project=firefox --reporter=list,html",
-    "e2s:webkit": "playwright test --config=Staging.config.ts --project=webkit --reporter=list,html",
-    "e2s:debug": "playwright test --config=Staging.config.ts --project=chromium --reporter=list,html --debug",
-    "e2s:show-report": "allure generate ./test-results/Reports/e2e/Staging/allure-results -o ./test-results/Reports/e2e/Staging/allure-reports --clean && npx allure open ./test-results/Reports/e2e/Staging/allure-reports",
-    "applicant:live": "npx playwright test ./tests/Applicant.spec.ts -g 'Making Live an applicant va landing page' --project=chromium --workers=1",
-    "applicant:stage": "npx playwright test ./tests/Applicant.spec.ts -g 'Making Stage an applicant va landing page' --project=chromium --workers=1",
-    "happyflow:aws:chrome": "playwright test --config=Production-Happyflow.config.ts --reporter=list --project=chromium --worker=1",
-    "happyflow:all": "playwright test --config=Production-Happyflow.config.ts",
-    "happyflow:chrome": "playwright test --config=Production-Happyflow.config.ts --project=chromium --reporter=list,html",
-    "happyflow:firefox": "playwright test --config=Production-Happyflow.config.ts --project=firefox --reporter=list,html",
-    "happyflow:webkit": "playwright test --config=Production-Happyflow.config.ts --project=webkit --reporter=list,html",
-    "happyflow:show-report": "allure generate ./test-results/Reports/HF/Production/allure-results -o ./test-results/Reports/HF/Production/allure-reports --clean && npx allure open ./test-results/Reports/HF/Production/allure-reports",
-    "happyflow:stage:all": "playwright test --config=Staging-Happyflow.config.ts --workers=4",
-    "happyflow:stage:chrome": "playwright test --config=Staging-Happyflow.config.ts --project=chromium --reporter=list,html",
-    "happyflow:stage:firefox": "playwright test --config=Staging-Happyflow.config.ts --project=firefox --reporter=list,html",
-    "happyflow:stage:webkit": "playwright test --config=Staging-Happyflow.config.ts --project=webkit --reporter=list,html",
-    "happyflow:stage:show-report": "allure generate ./test-results/Reports/HF/Staging/allure-results -o ./test-results/Reports/HF/Staging/allure-reports --clean && npx allure open ./test-results/Reports/HF/Staging/allure-reports",
-    "bot:aws": "playwright test --config=Widget.config.ts --reporter=list --workers=1",
-    "bot:all": "playwright test --config=Widget.config.ts",
-    "bot:chrome": "playwright test --config=Widget.config.ts --project=chromium",
-    "bot:firefox": "playwright test --config=Widget.config.ts --project=firefox"
-  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
-    "@playwright/test": "^1.38.0",
-    "@types/node": "^20.3.1",
-    "allure-commandline": "^2.22.1",
-    "allure-playwright": "^2.4.0",
-    "dotenv": "^16.0.3"
+  "bugs": {
+    "url": "https://github.com/tofiqsymits/RG-Actions/issues"
   },
-  "dependencies": {
-    "ci": "^2.2.0"
+  "homepage": "https://github.com/tofiqsymits/RG-Actions#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.38.0",
+    "@types/node": "^20.6.1"
   }
 }

@@ -39,3 +39,6 @@ Testing.spec.ts
 Reports/
 Authentication/Storage State
 package-lock.json
+/test-results/
+/playwright-report/
+/playwright/.cache/
